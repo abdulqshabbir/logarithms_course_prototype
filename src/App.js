@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Menu } from "semantic-ui-css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
+    <div class="ui pointing menu">
+      <a class="active item">Home</a>
     </div>
   );
 }
