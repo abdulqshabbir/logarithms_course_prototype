@@ -1,11 +1,7 @@
 import React from "react";
-import { Menu } from "semantic-ui-css";
-function App() {
-  return (
-    <div class="ui pointing menu">
-      <a class="active item">Home</a>
-    </div>
-  );
-}
+import LandingPage from "./components/Landing";
 
+function App() {
+  return <LandingPage />;
+}
 export default App;

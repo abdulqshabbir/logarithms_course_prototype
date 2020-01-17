@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu");
+
+/* custom web app colors declared at root level*/
+:root {
+  /* colors */
+  --langing-page-bg-color: rgba(15%, 15%, 17%, 0.95);
+  --neutral-white: rgba(100%, 100%, 100%, 0.9);
+  --neutral-gray: #a19e9f;
+  --accent-color: #ef4135;
+  --bg-color: #d3dbf2;
+
+  /* shades of gray*/
+  --faint-gray: #cfd8dc;
+  --neutral-gray: #90a4ae;
+  --light-gray: #607d8b;
+  --gray: #455a64;
+  --dark-gray: #263238;
+
+  /* fonts */
+  --primary-font: "Ubuntu";
+  --secondary-font: "Open Sans Condensed";
+  --extra-small-font-size-mobile: 6px;
+  --small-font-size: 16px;
+  --small-font-size-mobile: 8px;
+  --large-font-size: 48px;
+  --large-font-size-mobile: 24px;
+  --thick-font-weight: 700;
+  --medium-font-weight: 300;
+  --thin-font-weight: 100;
+  --upppercase-transform: uppercase;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--neutral-gray);
+  background: linear-gradient(
+    45deg,
+    var(--faint-gray) 0%,
+    var(--neutral-gray) 15%,
+    var(--light-gray) 35%,
+    var(--gray) 50%,
+    var(--dark-gray)
+  );
+}
+
+a {
+  background: var(--ocean-blue);
+}
