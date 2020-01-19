@@ -42,13 +42,17 @@ body {
   height: 100%;
   background-color: var(--neutral-gray);
   background: linear-gradient(
-    -45deg,
-    var(--faint-gray) 0%,
-    var(--neutral-gray) 5%,
-    var(--light-gray) 25%,
-    var(--gray) 50%,
-    var(--dark-gray)
-  );
+      -123deg,
+      rgba(245, 33, 33, 0) 82%,
+      hsla(0, 0%, 100%, 0.08) 0
+    ),
+    linear-gradient(-108deg, rgba(27, 0, 255, 0) 80%, hsla(0, 0%, 100%, 0.08) 0),
+    linear-gradient(
+      -101deg,
+      rgba(255, 33, 33, 0) 79%,
+      hsla(0, 0%, 100%, 0.08) 0
+    ),
+    #02203c;
 }
 
 * {
@@ -66,8 +70,8 @@ body {
 .links {
   width: 100%;
   font: var(--primary-font);
-  font-size: 30px;
-  font-weight: var(--thin-font-weight);
+  font-size: 25px;
+  font-weight: var(--thick-font-weight);
   text-align: left;
   margin: 3 rem auto 0;
   display: flex;
@@ -89,6 +93,7 @@ body {
   height: 2px; /* this is the height of the underline effect*/
   bottom: 0px;
   left: 15%;
+  margin-bottom: -5px;
   background: var(
     --neutral-white
   ); /* this is the color of the underline effect*/

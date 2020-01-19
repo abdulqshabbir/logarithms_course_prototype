@@ -5,8 +5,8 @@ import React from "react";
 
 const MenuBar = () => {
   return (
-    <div class="menu-bar">
-      <p class="links">
+    <div className="menu-bar">
+      <p className="links">
         <a href="#"> Home </a>
         <a href="#"> Logarithm Problems </a>
         <a href="#"> Video Solutions </a>
