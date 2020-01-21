@@ -93,7 +93,7 @@ body {
   height: 2px; /* this is the height of the underline effect*/
   bottom: 0px;
   left: 15%;
-  margin-bottom: -5px;
+  margin-bottom: -5px; /* this controls the position of the underline effect*/
   background: var(
     --neutral-white
   ); /* this is the color of the underline effect*/
