@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,900|Six+Caps");
+
+/* custom web app colors declared at root level*/
+:root {
+  /* colors */
+  --primary-color: #e9d20f;
+  --black: #252525;
+  --white: rgba(100%, 100%, 100%, 0.9);
+  --light-gray: #a19e9f;
+
+  /* fonts */
+  --six-caps-font: "Six Caps", sans-serif;
+  --merri-weather-font: "Merriweather", serif;
+  --extra-small-font-size-mobile: 6px;
+
+  --thick-font-weight: 700;
+  --medium-font-weight: 300;
+  --thin-font-weight: 100;
+}
+
+html,
+body {
+  font-family: var(--merri-weather-font);
+  font-size: 0.5em;
+  display: grid;
+  background: var(--primary-color);
+  display: grid;
+  grid-template-rows: 10vh 90vh auto;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "logo nav nav nav nav"
+    "landing landing landing landing";
+}
+
+.nav {
+  background: var(--black);
+  width: 100vw;
+  grid-area: logo;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  grid-area: nav;
+  color: var(--primary-color);
+  font-size: 5em;
+  font-weight: var(--medium-font-weight);
+}
+
+.nav-logo {
+}
