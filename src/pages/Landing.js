@@ -5,7 +5,7 @@ import React from "react";
 
 const MenuBar = () => {
   return (
-    <div>
+    <div className="container">
       <nav className="nav">
         <div className="nav-logo">
           <Logo />
@@ -16,18 +16,41 @@ const MenuBar = () => {
         <div className="nav-item">Contact Us</div>
       </nav>
       <div className="hero">Welcome to HL Academy.</div>
-      <main className="main">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+      <main className="content-main">
+        <p>
+          HL Academy provides IB Math HL questions to help students prepare for
+          their upcoming examinations. Each question is representative of the
+          depth, difficulty and rigor of actual IB examination questions. Every
+          question on our site is paired with a video explanation for the
+          problem-solving strategy needed to solve questions of a similar
+          nature.
+        </p>
       </main>
-      <footer className="footer">@Abdul Shabbir</footer>
+      <div className="content-secondary">
+        <div>
+          <h1>Clear explanations</h1>
+          <p>
+            We provide clear, concise explanations to get you up and running
+            with foundational concepts.
+          </p>
+        </div>
+        <div>
+          <h1>Difficult Math problems at the right level.</h1>
+          <p>
+            We know that to maximize learning you need to be doing lots of
+            unfamiliar problems that require an novel approach.
+          </p>
+        </div>
+        <div>
+          <h1>Video solutions.</h1>
+          <p>
+            If you're stuck, we have you covered with a complete video solution
+            that not only walks you through the problem but also the intuition
+            behind the solution.
+          </p>
+        </div>
+      </div>
+      <footer className="footer">&copy; 2020 HL Academy</footer>
     </div>
   );
 };
