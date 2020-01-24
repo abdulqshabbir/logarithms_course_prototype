@@ -2,6 +2,7 @@
 import "./Landing.css";
 import Logo from "../components/Logo";
 import React from "react";
+import { Icon } from "semantic-ui-react";
 
 const MenuBar = () => {
   return (
@@ -15,8 +16,9 @@ const MenuBar = () => {
         <div className="nav-item">Solutions</div>
         <div className="nav-item">Contact Us</div>
       </nav>
-      <div className="hero">Welcome to HL Academy.</div>
+      <div className="hero">Welcome To HL Academy.</div>
       <main className="content-main">
+        <h1>What do we do?</h1>
         <p>
           HL Academy provides IB Math HL questions to help students prepare for
           their upcoming examinations. Each question is representative of the
@@ -27,27 +29,44 @@ const MenuBar = () => {
         </p>
       </main>
       <div className="content-secondary">
-        <div>
+        <div className="content">
           <h1>Clear explanations</h1>
           <p>
-            We provide clear, concise explanations to get you up and running
-            with foundational concepts.
+            We provide clear, concise explanations on foundational concepts to
+            get you up and running.
           </p>
+          <div className="icon">
+            <Icon bordered size="huge" name="black bordered inverted pencil" />
+          </div>
         </div>
-        <div>
-          <h1>Difficult Math problems at the right level.</h1>
+        <div className="content">
+          <h1>Difficult Math problems.</h1>
           <p>
             We know that to maximize learning you need to be doing lots of
             unfamiliar problems that require an novel approach.
           </p>
+          <div className="icon">
+            <Icon
+              bordered
+              size="huge"
+              name="black bordered inverted question"
+            />
+          </div>
         </div>
-        <div>
+        <div className="content">
           <h1>Video solutions.</h1>
           <p>
             If you're stuck, we have you covered with a complete video solution
             that not only walks you through the problem but also the intuition
             behind the solution.
           </p>
+          <div className="icon">
+            <Icon
+              bordered
+              size="huge"
+              name="black bordered inverted video play"
+            />
+          </div>
         </div>
       </div>
       <footer className="footer">&copy; 2020 HL Academy</footer>

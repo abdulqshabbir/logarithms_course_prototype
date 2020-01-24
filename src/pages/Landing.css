@@ -11,7 +11,6 @@
   /* fonts */
   --six-caps-font: "Six Caps", sans-serif;
   --merri-weather-font: "Merriweather", serif;
-  --extra-small-font-size-mobile: 6px;
 
   --thick-font-weight: 700;
   --medium-font-weight: 300;
@@ -26,7 +25,7 @@ body {
 .container {
   display: grid;
   background: var(--primary-color);
-  grid-template-rows: minmax(15vh, 15vh) 85vh 100vh 100vh 5vh;
+  grid-template-rows: 15vh 85vh 100vh 100vh 5vh;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 .nav {
@@ -84,12 +83,17 @@ body {
   grid-row: 3/4;
   grid-column: 1/6;
   display: flex;
+  flex-direction: column;
   width: 100vw;
   justify-content: center;
   align-items: center;
   font-size: 5em;
-  line-height: 2em;
   font-weight: 100;
+}
+
+.content-main > h1 {
+  font-size: 3em;
+  padding-bottom: 0.5em;
 }
 
 .content-main > p {
@@ -102,22 +106,32 @@ body {
   font-weight: 100;
   line-height: 2em;
   background-color: var(--primary-color);
-  width: 100vw;
   grid-row: 4/5;
   grid-column: 1/6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
 }
 
 .content-secondary h1 {
   font-size: 1.5em;
-  padding-top: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .content-secondary p {
   font-size: 1em;
+  text-align: center;
+  padding: 20px;
+}
+
+.icon {
+  text-align: center;
 }
 
 .footer {
