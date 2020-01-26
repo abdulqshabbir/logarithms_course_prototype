@@ -1,0 +1,64 @@
+:root {
+  /* colors */
+  --primary-color: #e9d20f;
+  --black: #252525;
+  --white: rgba(100%, 100%, 100%, 0.9);
+  --light-gray: #a19e9f;
+
+  /* fonts */
+  --six-caps-font: "Six Caps", sans-serif;
+  --merri-weather-font: "Merriweather", serif;
+
+  --thick-font-weight: 700;
+  --medium-font-weight: 300;
+  --thin-font-weight: 100;
+}
+
+html,
+body {
+  font-family: var(--merri-weather-font);
+  font-size: 0.5em;
+}
+
+.container {
+  display: grid;
+  background: var(--primary-color);
+  grid-template-rows: 15vh;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.nav {
+  background: var(--black);
+  grid-row: 1 / 2;
+  grid-column: 1 / 6;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  color: var(k--primary-color);
+  font-size: 5.5em;
+  line-height: 10px;
+  font-weight: var(--medium-font-weight);
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  background: var(--primary-color);
+  width: 0%;
+  top: 250%;
+  transition: all ease-in-out 100ms;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}

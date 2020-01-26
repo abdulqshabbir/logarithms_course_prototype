@@ -1,21 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from "react";
-import "./Landing.css";
-import Logo from "../components/Logo";
 import { Icon } from "semantic-ui-react";
+import "./Landing.css";
 
 const LandingPage: React.FC = () => {
   return (
     <div className="container">
-      <nav className="nav">
-        <div className="nav-logo">
-          <Logo />
-        </div>
-        <div className="nav-item"> Home </div>
-        <div className="nav-item"> HL Problems </div>
-        <div className="nav-item"> Solutions </div>
-        <div className="nav-item"> Contact Us </div>
-      </nav>
       <div className="hero"> Welcome To HL Academy.</div>
       <main className="content-main">
         <h1>What do we do? </h1>
@@ -67,7 +57,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <footer className="footer">& copy; 2020 HL Academy </footer>
+      <footer className="footer">&copy; 2020 HL Academy </footer>
     </div>
   );
 };

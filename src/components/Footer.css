@@ -1,0 +1,21 @@
+:root {
+  /* colors */
+  --primary-color: #e9d20f;
+  --black: #252525;
+  --white: rgba(100%, 100%, 100%, 0.9);
+  --light-gray: #a19e9f;
+
+  /* fonts */
+  --six-caps-font: "Six Caps", sans-serif;
+  --merri-weather-font: "Merriweather", serif;
+
+  --thick-font-weight: 700;
+  --medium-font-weight: 300;
+  --thin-font-weight: 100;
+}
+
+html,
+body {
+  font-family: var(--merri-weather-font);
+  font-size: 0.5em;
+}
