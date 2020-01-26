@@ -4,7 +4,7 @@ import "./Landing.css";
 import Logo from "../components/Logo";
 import { Icon } from "semantic-ui-react";
 
-const MenuBar: React.FC = () => {
+const LandingPage: React.FC = () => {
   return (
     <div className="container">
       <nav className="nav">
@@ -72,4 +72,4 @@ const MenuBar: React.FC = () => {
   );
 };
 
-export default MenuBar;
+export default LandingPage;
