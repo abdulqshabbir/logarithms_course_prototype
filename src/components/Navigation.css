@@ -1,6 +1,7 @@
 :root {
   /* colors */
   --primary-color: #e9d20f;
+  --primary-color-darker: #b6b10b;
   --black: #252525;
   --white: rgba(100%, 100%, 100%, 0.9);
   --light-gray: #a19e9f;
@@ -20,13 +21,6 @@ body {
   font-size: 0.5em;
 }
 
-.container {
-  display: grid;
-  background: var(--primary-color);
-  grid-template-rows: 15vh;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-}
-
 .nav {
   background: var(--black);
   grid-row: 1 / 2;
@@ -40,7 +34,6 @@ body {
 }
 
 .nav-item {
-  color: var(k--primary-color);
   font-size: 5.5em;
   line-height: 10px;
   font-weight: var(--medium-font-weight);
@@ -61,4 +54,12 @@ body {
 
 .nav-item:hover::before {
   width: 100%;
+}
+
+div > a {
+  color: var(--primary-color);
+}
+
+div > a:hover {
+  color: var(--primary-color-darker);
 }

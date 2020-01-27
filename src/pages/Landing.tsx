@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from "react";
 import { Icon } from "semantic-ui-react";
+import Navigation from "../components/Navigation";
 import "./Landing.css";
 
 const LandingPage: React.FC = () => {
   return (
     <div className="container">
+      <Navigation />
       <div className="hero"> Welcome To HL Academy.</div>
       <main className="content-main">
         <h1>What do we do? </h1>
