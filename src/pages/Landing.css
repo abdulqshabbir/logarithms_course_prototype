@@ -17,14 +17,14 @@
   --thin-font-weight: 100;
 }
 
-.container {
+.landing-container {
   display: grid;
   background: var(--primary-color);
   grid-template-rows: 15vh 85vh 100vh 100vh 5vh;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
-.hero {
+.landing-hero {
   font-family: var(--six-caps-font);
   font-size: 30em;
   color: var(--black);
@@ -37,7 +37,7 @@
   align-items: center;
 }
 
-.content-main {
+.landing-content-main {
   font-family: var(--merri-weather-font);
   background-color: white;
   grid-row: 3/4;
@@ -51,16 +51,16 @@
   font-weight: 100;
 }
 
-.content-main > h1 {
+.landing-content-main > h1 {
   font-size: 3em;
   padding-bottom: 0.5em;
 }
 
-.content-main > p {
+.landing-content-main > p {
   width: 50%;
 }
 
-.content-secondary {
+.landing-content-secondary {
   font-family: var(--merri-weather-font);
   font-size: 5em;
   font-weight: 100;
@@ -73,29 +73,29 @@
   margin-top: 100px;
 }
 
-.content {
+.landing-content {
   display: grid;
   grid-template-rows: 1fr 2fr 3fr;
 }
 
-.content-secondary h1 {
+.landing-content-secondary h1 {
   font-size: 1.5em;
   text-align: center;
   padding: 20px;
 }
 
-.content-secondary > p {
+.landing-content-secondary > .landing-content {
   font-size: 1em;
   text-align: center;
   padding: 20px;
 }
 
-.icon {
+.landing-icon {
   text-align: center;
   border-radius: 50%;
 }
 
-.footer {
+.landing-footer {
   background: var(--black);
   color: var(--primary-color);
   font-size: 4em;

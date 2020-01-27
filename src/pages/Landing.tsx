@@ -6,10 +6,10 @@ import "./Landing.css";
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="container">
+    <div className="landing-container">
       <Navigation />
-      <div className="hero"> Welcome To HL Academy.</div>
-      <main className="content-main">
+      <div className="landing-hero"> Welcome To HL Academy.</div>
+      <main className="landing-content-main">
         <h1>What do we do? </h1>
         <p>
           HL Academy provides IB Math HL questions to help students prepare for
@@ -20,8 +20,8 @@ const LandingPage: React.FC = () => {
           nature.
         </p>
       </main>
-      <div className="content-secondary">
-        <div className="content">
+      <div className="landing-content-secondary">
+        <div className="landing-content">
           <h1>Clear explanations </h1>
           <p>
             We provide clear, concise explanations on foundational concepts to
@@ -31,24 +31,24 @@ const LandingPage: React.FC = () => {
             <Icon bordered size="huge" color="black" inverted name="pencil" />
           </div>
         </div>
-        <div className="content">
+        <div className="landing-content">
           <h1>Difficult Math problems.</h1>
           <p>
             We know that to maximize learning you need to be doing lots of
             unfamiliar problems that require an novel approach.
           </p>
-          <div className="icon">
+          <div className="landing-icon">
             <Icon bordered size="huge" color="black" inverted name="question" />
           </div>
         </div>
-        <div className="content">
+        <div className="landing-content">
           <h1>Video solutions.</h1>
           <p>
             If you're stuck, we have you covered with a complete video solution
             that not only walks you through the problem but also the intuition
             behind the solution.
           </p>
-          <div className="icon">
+          <div className="landing-icon">
             <Icon
               bordered
               inverted
@@ -59,7 +59,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <footer className="footer">&copy; 2020 HL Academy </footer>
+      <footer className="landing-footer">&copy; 2020 HL Academy </footer>
     </div>
   );
 };
