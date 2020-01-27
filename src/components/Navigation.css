@@ -9,6 +9,10 @@
   /* fonts */
   --six-caps-font: "Six Caps", sans-serif;
   --merri-weather-font: "Merriweather", serif;
+  --very-large-font-size: 64px;
+  --large-font-size: 32px;
+  --medium-font-size: 16px;
+  --small-font-size: 8px;
 
   --thick-font-weight: 700;
   --medium-font-weight: 300;
@@ -18,6 +22,7 @@
 html,
 body {
   font-family: var(--merri-weather-font);
+  font-size: 16px;
   font-size: 0.5em;
 }
 
