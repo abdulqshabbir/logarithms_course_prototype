@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Card from "../components/Card";
 import { Button } from "semantic-ui-react";
 import "./Problems.css";
 
@@ -7,8 +8,8 @@ const Problems = () => {
   return (
     <div className="problems-container">
       <Navigation />
-      <div className="problems-title">Logarithm Fundamentals</div>
-      <header className="problems-header">
+      <div className="problems-title">Logarithms</div>
+      <header className="grouping-progress-container">
         <div className="grouping-container">
           <h3>Group</h3>
           <Button as="button" className="topic-button">
@@ -24,25 +25,20 @@ const Problems = () => {
           <p>O out of 3 problems complete</p>
         </div>
       </header>
-      <div className="problems-list-container">
-        <div className="problems-list-header ">
-          <h1>0 out of 1 Easy Prolems Complete</h1>
-          <div className="problems-list-questions">
-            <div className="easy problem"></div>
-          </div>
-        </div>
-        <div className="problems-list-questions">
-          <h1>0 out of 1 Medium Problems Complete</h1>
-          <div>
-            <div className="medium problem"></div>
-          </div>
-        </div>
-        <div className="problems-list-questions">
-          <h1>0 out of 1 Hard Problems Complete</h1>
-          <div>
-            <div className="hard problem"></div>
-          </div>
-        </div>
+      <div className="questions-title">Introduction to Logarithms</div>
+      <div className="questions-container">
+        <Card
+          title="What even is a logarithm?"
+          content="Get started with the fondations of logarithms"
+        />
+        <Card
+          title="What is a logarithm?"
+          content="Get started with the fondations of logarithms"
+        />
+        <Card
+          title="What is a logarithm?"
+          content="Get started with the fondations of logarithms"
+        />
       </div>
     </div>
   );

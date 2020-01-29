@@ -9,7 +9,7 @@
   --six-caps-font: "Six Caps", sans-serif;
   --merri-weather-font: "Merriweather", serif;
 
-  --very-large-font-size: 64px;
+  --very-large-font-size: 48px;
   --large-font-size: 32px;
   --medium-font-size: 16px;
   --small-font-size: 8px;
@@ -38,29 +38,31 @@ button.ui.button {
 .problems-container {
   display: grid;
   background-color: white;
-  grid-template-rows: 15vh 15vh 30vh 40vh 100vh;
+  grid-template-rows: [nav-start] 15vh [title-start] 15vh [ grouping-progress-start ] 30vh [question-subtitle-start] 15vh [question-cards-start] 30vh [page-end];
+  /* */
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  /* columns are really only used for alligning navigation bar*/
 }
 
 .problems-title {
   font-family: var(--merri-weather-font);
   font-size: var(--very-large-font-size);
   font-weight: var(--thin-font-weight);
-  grid-row: 2/3;
+  grid-row: title-start / grouping-progress-start;
   grid-column: 1 / 6;
-  margin: 0 auto 0 auto; /* indent title*/
+  margin: 0 auto 0 auto; /* center title*/
   width: 90%;
   border-bottom: 0.2px solid var(--light-gray);
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.problems-header {
+.grouping-progress-container {
   font-family: var(--merri-weather-font);
-  grid-row: 3 / 4;
+  grid-row: grouping-progress-start/question-subtitle-start;
   grid-column: 1 / 6;
   display: grid;
   grid-template-rows: 1fr;
@@ -77,4 +79,29 @@ button.ui.button {
   grid-column: 2 / 3; /* right-half of parent container*/
   margin: 0 auto; /* centers horizontally*/
   width: 80%;
+}
+
+.questions-title {
+  grid-row: question-subtitle-start/ question-cards-start;
+  margin: 0;
+  padding-left: 5vw;
+  background: var(--primary-color);
+  font-size: var(--large-font-size);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.questions-container {
+  grid-row: question-cards-start / page-end;
+  height: 200px;
+  width: 100vw;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
