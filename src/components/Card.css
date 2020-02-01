@@ -20,6 +20,12 @@
   --thin-font-weight: 100;
 }
 
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 .card-container {
   background: #e0e1e2;
   margin: 10px;
@@ -29,7 +35,6 @@
   box-shadow: 1px 2px 5px var(--light-gray);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   transition: all ease-in-out 100ms;
   cursor: pointer;
 }
@@ -39,12 +44,14 @@
 }
 
 .card-title {
+  color: var(--black);
   font-size: 20px;
   font-weight: var(--thin-font-weight);
   margin: 20px;
 }
 
 .card-content {
+  color: var(--black);
   font-size: 12px;
   font-weight: 100;
   margin: 0 0 0 20px;

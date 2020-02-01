@@ -66,5 +66,5 @@ div > a {
 }
 
 div > a:hover {
-  color: var(--primary-color-darker);
+  color: var(--primary-color);
 }

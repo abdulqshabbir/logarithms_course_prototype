@@ -2,24 +2,27 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/Landing";
 import ProblemsPage from "./pages/Problems";
-import SolutionsPage from "./pages/Solutions";
+import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
-
+import Problem from "./components/Problem";
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/problems">
-          <ProblemsPage />
+        <Route exact path="/">
+          <LandingPage />
         </Route>
-        <Route path="/solutions">
-          <SolutionsPage />
+        <Route exact path="/about">
+          <AboutPage />
         </Route>
-        <Route path="/contact">
+        <Route exact path="/contact">
           <ContactPage />
         </Route>
-        <Route path="/">
-          <LandingPage />
+        <Route exact path="/problems">
+          <ProblemsPage />
+        </Route>
+        <Route exact path="/problems/problem">
+          <Problem />
         </Route>
       </Switch>
     </Router>

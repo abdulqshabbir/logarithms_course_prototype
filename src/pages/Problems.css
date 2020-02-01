@@ -39,7 +39,6 @@ button.ui.button {
   display: grid;
   background-color: white;
   grid-template-rows: [nav-start] 15vh [title-start] 15vh [ grouping-progress-start ] 30vh [question-subtitle-start] 15vh [question-cards-start] 30vh [page-end];
-  /* */
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   /* columns are really only used for alligning navigation bar*/
 }
