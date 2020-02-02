@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch
-} from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 import "./Card.css";
 
 interface Props {
@@ -16,11 +9,14 @@ interface Props {
 
 const Card = (props: Props) => {
   let { title, content } = props;
+  let { url } = useRouteMatch();
   return (
-    <div className="card-container card">
-      <header className="card-title">{title}</header>
-      <p className="card-content">{content}</p>
-    </div>
+    <Link to={`${url}/problem/${title}`}>
+      <div className="card-container card">
+        <header className="card-title">{title}</header>
+        <p className="card-content">{content}</p>
+      </div>
+    </Link>
   );
 };
 

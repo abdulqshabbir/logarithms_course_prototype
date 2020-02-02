@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/problems">
           <ProblemsPage />
         </Route>
-        <Route exact path="/problems/problem">
+        <Route exact path="/problems/problem/:problemTitle">
           <Problem />
         </Route>
       </Switch>

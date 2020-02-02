@@ -1,19 +1,10 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-  useRouteMatch
-} from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Card from "../components/Card";
 import { Button } from "semantic-ui-react";
 import "./Problems.css";
 
 const Problems = () => {
-  const { url, path } = useRouteMatch();
   return (
     <div className="problems-container">
       <Navigation />
@@ -36,12 +27,10 @@ const Problems = () => {
       </header>
       <div className="questions-title">Introduction to Logarithms</div>
       <div className="questions-container">
-        <Link to={`${url}/problem`}>
-          <Card
-            title="What is a logarithm?"
-            content="Get started with the fondations of logarithms."
-          />
-        </Link>
+        <Card
+          title="What is a logarithm?"
+          content="Get started with the fondations of logarithms."
+        />
         <Card
           title="What are logarithm laws?"
           content="Understand the why of logarithm laws."
