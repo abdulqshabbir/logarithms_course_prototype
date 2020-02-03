@@ -1,17 +1,106 @@
-.question-container {
+/* custom web app colors declared at root level*/
+:root {
+  /* colors */
+  --primary-color: #e9d20f;
+  --black: #252525;
+  --white: rgba(100%, 100%, 100%, 0.9);
+  --light-gray: #a19e9f;
+  --faint-gray: #f7f7f7;
+  --hover-gray: rgb(202, 203, 205);
+
+  /* fonts */
+  --six-caps-font: "Six Caps", sans-serif;
+  --merri-weather-font: "Merriweather", serif;
+  --very-large-font-size: 64px;
+  --large-font-size: 32px;
+  --medium-font-size: 16px;
+  --small-font-size: 8px;
+
+  --thick-font-weight: 700;
+  --medium-font-weight: 300;
+  --thin-font-weight: 100;
+
+  --button-border-radius: 6px;
+}
+
+.problem-page-container {
+  background: var(--white);
   display: grid;
-  background: var(--primary-color);
-  grid-template-rows: 15vh 85vh 100vh 100vh 5vh;
+  grid-template-rows: 15vh 85vh;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
-.question-title {
-  grid-column: 1 / 6;
+.problem-card-container {
+  background-color: var(--white);
+  font-family: var(--merri-weather-font);
+  font-size: 16px;
+  padding: 10px;
+  line-height: 16px;
+  grid-column: 1/6;
   grid-row: 2/3;
-  margin: 0 auto;
-  padding: 0;
+  border-radius: 5%;
+  display: grid;
+  margin: 5vh auto 5vh auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr 5fr;
+}
+
+.problem-title {
+  grid-row: 1/2;
+  font-family: var(--merri-weather-font);
+  font-size: 42px;
+  font-weight: var(--thin-font-weight);
+}
+
+.problem-prompt {
+  grid-row: 2/3;
+  font-family: var(--merri-weather-font);
+  font-size: 16px;
+  font-weight: var(--thin-font-weight);
+}
+
+.problem-form {
+  grid-row: 3/4;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.choice {
+  font-family: var(--merri-weather-font);
+}
+
+.ui.button.choice {
+  background: var(--white);
+}
+
+.ui.button.choice:hover {
+  background: var(--hover-gray);
+}
+
+.ui.button.problem-submit {
+  background: black;
+  font-weight: var(--thick-font-weight);
+  color: white;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: var(--button-border-radius);
+  transition: all ease-in-out 100ms;
+}
+
+.ui.button.problem-submit:hover {
+  opacity: 0.85;
+}
+
+.ui.button.video-solution {
+  font-weight: var(--thick-font-weight);
+  background: white;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--button-border-radius);
+  transition: all ease-in-out 100ms;
+}
+
+.ui.button.video-solution:hover {
+  border: 1px solid var(--black);
+  border-radius: var(--button-border-radius);
 }

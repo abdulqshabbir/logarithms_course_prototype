@@ -1,23 +1,49 @@
-import React from "react";
+import React, { useState, MouseEvent } from "react";
 import { useParams } from "react-router-dom";
+import { Button } from "semantic-ui-react";
 import Navigation from "./Navigation";
+import "./Problem.css";
 
-type ProblemTitle = string;
+interface Props {
+  title: string;
+  prompt: string;
+  choiceA: string;
+  choiceB: string;
+  choiceC: string;
+  choiceD: string;
+  correctChoice: "A" | "B" | "C" | "D";
+}
 
-const Problem = () => {
-  const { problemTitle: ProblemTitle } = useParams();
+const Problem: React.FunctionComponent = () => {
+  const { problemTitle } = useParams();
+  const handleProblemSubmit = (e: MouseEvent) => {
+    e.preventDefault();
+    alert(e.currentTarget.tagName);
+  };
   return (
-    <div className="problem-container">
+    <div className="problem-page-container">
       <Navigation />
-      <h1 className="problem-title">{ProblemTitle}</h1>
-      <main className="problem-prompt">
-        This is where the details of the question would go.
-      </main>
-      <div className="problem-sidebar">
-        <div className="sidebar-header"></div>
-        <div className="sidebar-form">
-          <div className="sidebar-MCQ"></div>
-        </div>
+      <div className="problem-card-container">
+        <h1 className="problem-title">{problemTitle}</h1>
+        <main className="problem-prompt">prompt this is a prompt...</main>
+        <form className="problem-form">
+          <div className="problem-choices">
+            <Button className="choice A">Choice A</Button>
+            <Button className="choice B">Choice B</Button>
+            <Button className="choice C">Choice C</Button>
+            <Button className="choice D">Choice D</Button>
+          </div>
+          <Button
+            as="button"
+            className="problem-submit"
+            onClick={handleProblemSubmit}
+          >
+            Submit
+          </Button>
+          <Button as="button" className="video-solution">
+            Video Solution
+          </Button>
+        </form>
       </div>
     </div>
   );
