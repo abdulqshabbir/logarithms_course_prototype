@@ -84,7 +84,6 @@ button.ui.button {
   grid-row: question-subtitle-start/ question-cards-start;
   margin: 0;
   padding-left: 5vw;
-  background: var(--primary-color);
   font-size: var(--large-font-size);
   display: flex;
   justify-content: flex-start;

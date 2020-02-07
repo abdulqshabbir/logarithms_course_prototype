@@ -1,7 +1,8 @@
-import React, { useState, MouseEvent } from "react";
+import React, { MouseEvent } from "react";
 import { useParams } from "react-router-dom";
 import { Button } from "semantic-ui-react";
 import Navigation from "./Navigation";
+import Equation from "./Equation";
 import "./Problem.css";
 
 interface Props {
@@ -25,7 +26,10 @@ const Problem: React.FunctionComponent = () => {
       <Navigation />
       <div className="problem-card-container">
         <h1 className="problem-title">{problemTitle}</h1>
-        <main className="problem-prompt">prompt this is a prompt...</main>
+        <main className="problem-prompt">
+          Here is a prompt for you to answer...
+          <Equation></Equation>
+        </main>
         <form className="problem-form">
           <div className="problem-choices">
             <Button className="choice A">Choice A</Button>
