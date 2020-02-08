@@ -55,11 +55,16 @@
 .problem-prompt {
   grid-row: 2/3;
   font-family: var(--merri-weather-font);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: var(--thin-font-weight);
 }
 
+.problem-prompt > p {
+  font-size: 20px;
+}
+
 .problem-form {
+  width: 600px;
   grid-row: 3/4;
   display: flex;
   flex-direction: column;
@@ -70,12 +75,25 @@
   font-family: var(--merri-weather-font);
 }
 
+.equation-container > span {
+  font-family: var(--merri-weather-font);
+  font-size: 20px;
+  font-weight: var(--thin-font-weight);
+  color: black;
+}
+
 .ui.button.choice {
   background: var(--white);
 }
 
+.ui.button.choice.active {
+  background: var(--primary-color);
+  opacity: 80%;
+}
+
 .ui.button.choice:hover {
-  background: var(--hover-gray);
+  background: var(--primary-color);
+  opacity: 50%;
 }
 
 .ui.button.problem-submit {
@@ -103,4 +121,20 @@
 .ui.button.video-solution:hover {
   border: 1px solid var(--black);
   border-radius: var(--button-border-radius);
+}
+
+.question-feedback {
+  font-size: var(--medium-font-size);
+}
+
+.question-feedback > h3 {
+  font-size: var(--large-font-size);
+  font-weight: var(--thin-font-weight);
+  color: black;
+}
+
+.question-feedback > p {
+  font-size: var(--medium-font-size);
+  font-weight: var(--thin-font-weight);
+  color: #696969;
 }
